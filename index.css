@@ -1,0 +1,16 @@
+.image {
+    background-image: url('template/header-bg.jpg');
+    height: 100vh;
+    width:100%
+}
+
+.img {
+    background-image: url(../.../template/header-bg.jpg); 
+
+}
+
+
+
+/* .overlay-bg {
+    background-color: rgba(0, 0, 0, 0.1); /*
+
