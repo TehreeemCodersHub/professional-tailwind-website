@@ -1,17 +1,80 @@
 .image {
-    background-image: url('template/header-bg.jpg');
-    height: 100vh;
-    width:100%
+  background-image: url('template/header-bg.jpg');
+  height: 87vh; /* Adjusted the height to 80vh */
+  width: 100%;
+  position: relative; /* Added this to position the ::before pseudo-element correctly */
 }
+
+.image::before {
+  content: '';
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute; /* Added this to position the overlay */
+  top: 0;
+  left: 0;
+  z-index: 0;
+
+}
+.image > * {
+  z-index: 10;
+  position: relative;
+  color: white;
+}
+
+/* now for the 2nd image to make it dark color */
+
+.form-image {
+  background-image: url('template/form-bg.jpg');
+  position: relative;
+}
+
+.form-image::before {
+  content: '';
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute; /* Added this to position the overlay */
+  top: 0;
+  left: 0;
+  z-index: 0;
+
+
+}
+.form-image > * {
+  z-index: 10;
+  position: relative;
+  color: white;
+
+}
+
+
 
 .image-1 {
     background-image: url('template/header-bg.jpg');
-    
+    position: relative;
     
 }
-.form-image {
-    background-image: url('template/form-bg.jpg');
+.image-1::before {
+  content: '';
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute; /* Added this to position the overlay */
+  top: 0;
+  left: 0;
+  z-index: 0;
+
+
 }
+.image-1 > * {
+  z-index: 10;
+  position: relative;
+  color: white;
+
+}
+
+
 
 
 
@@ -61,3 +124,6 @@
     border-bottom: 29px solid #ddd; /* Gray border color */
   }
   
+
+
+  /* workinfg on last image */
